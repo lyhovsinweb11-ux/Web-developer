@@ -125,6 +125,15 @@
                     </div>
                     <p class="lede">A visual drawer for events, learning moments, and the work behind the work.</p>
                 </div>
+                <div class="gallery-toolbar" aria-label="Filter memory gallery">
+                    <div class="gallery-filter" role="group" aria-label="Memory types">
+                        <button class="gallery-filter-btn active" data-gallery-filter="all">All memories</button>
+                        <button class="gallery-filter-btn" data-gallery-filter="project">Projects</button>
+                        <button class="gallery-filter-btn" data-gallery-filter="process">Process</button>
+                        <button class="gallery-filter-btn" data-gallery-filter="learning">Learning</button>
+                    </div>
+                    <span class="gallery-count mono"><span id="gallery-count">05</span> / 05 frames</span>
+                </div>
                 <div id="gallery-list" class="gallery-grid"></div>
             </div>
         </section>
@@ -144,6 +153,7 @@
     </footer>
     <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview"><button class="close"
             aria-label="Close image preview">×</button><img src="" alt=""></div>
+        <div class="toast" role="status" aria-live="polite"></div>
     <script src="data.js"></script>
     <script src="app.js"></script>
 </body>
