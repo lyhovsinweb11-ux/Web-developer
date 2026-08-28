@@ -13,7 +13,12 @@ function render() {
 
 function initInteractions() {
     const nav = $('.nav');
-    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), { passive: true });
+    const sections = $$('main section[id]');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+        const current = sections.reduce((active, section) => window.scrollY >= section.offsetTop - 180 ? section.id : active, 'home');
+        $$('.nav-links a').forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${current}`));
+    }, { passive: true });
     const menu = $('.menu-btn');
     menu.addEventListener('click', () => $('.nav-links').classList.toggle('open'));
     $$('.nav-links a').forEach(link => link.addEventListener('click', () => $('.nav-links').classList.remove('open')));
@@ -28,6 +33,12 @@ function initInteractions() {
     const words = ['Web Developer', 'Frontend Developer', 'Creative Coder', 'Problem Solver']; let wordIndex = 0; let charIndex = 0; let deleting = false;
     function type() { const word = words[wordIndex]; $('.typed').textContent = word.slice(0, charIndex); if (!deleting && charIndex < word.length) charIndex++; else if (deleting && charIndex > 0) charIndex--; else { deleting = !deleting; if (!deleting) wordIndex = (wordIndex + 1) % words.length; } setTimeout(type, deleting ? 60 : 115); }
     type();
+    const hero = $('.hero');
+    hero.addEventListener('pointermove', event => {
+        const x = (event.clientX / window.innerWidth - .5) * 10;
+        const y = (event.clientY / window.innerHeight - .5) * 10;
+        $('.portrait-frame').style.transform = `rotate(3deg) translate(${x}px, ${y}px)`;
+    });
 }
 
 render();
