@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sin Lyhov | Web Developer</title>
+    <meta name="description"
+        content="Personal portfolio of Sin Lyhov, a web developer creating modern and responsive web experiences.">
+    <meta property="og:title" content="Sin Lyhov | Web Developer">
+    <meta property="og:description" content="Modern, responsive, and interactive web experiences.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="nav" aria-label="Main navigation"><a class="brand" href="#home"><span class="brand-mark">SL</span> SIN
+            LYHOV</a><button class="menu-btn" aria-label="Toggle navigation">☰</button>
+        <div class="nav-links"><a class="active" href="#home">Home</a><a href="#history">History</a><a
+                href="#about">About Me</a><a href="#job">Job</a><a href="#projects">Projects</a><a
+                href="#position">Position</a><a href="#gallery">Memory Gallery</a></div>
+    </nav>
+    <main>
+        <section class="hero" id="home">
+            <div class="wrap hero-grid">
+                <div><span class="eyebrow">01 / Available for meaningful work</span>
+                    <h1>SIN<span>LYHOV</span></h1>
+                    <div class="hero-copy">
+                        <div class="typed" aria-label="Web Developer"></div><span class="cursor">_</span>
+                        <p>I build modern, responsive, and interactive web experiences with a bias toward clarity,
+                            craft, and useful details.</p>
+                    </div>
+                    <div class="actions"><a class="button" href="#projects">View My Projects <span>↗</span></a><a
+                            class="button ghost" href="#about">About Me</a></div>
+                </div>
+                <div class="portrait-frame"><img class="portrait"
+                        src="/image/image.png"
+                        alt="Developer working at a desk"><span class="portrait-caption mono">/ a work in progress,
+                        always</span></div>
+            </div>
+            <div class="wrap scroll-note">Scroll to explore</div>
+        </section>
+        <div class="wrap stats">
+            <div class="stat"><strong>04+</strong><small>Years learning</small></div>
+            <div class="stat"><strong>12</strong><small>Selected builds</small></div>
+            <div class="stat"><strong>∞</strong><small>Curiosity</small></div>
+            <div class="stat"><strong>24/7</strong><small>Ideas in progress</small></div>
+        </div>
+        <section class="section" id="history">
+            <div class="wrap">
+                <div class="section-heading">
+                    <div><span class="eyebrow">02 / The long view</span>
+                        <h2>History<span style="color:var(--lime)">.</span></h2>
+                    </div>
+                    <p class="lede">A timeline of the questions, experiments, and projects that brought me here.</p>
+                </div>
+                <div id="history-list" class="timeline"></div>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="wrap">
+                <div class="section-heading">
+                    <div><span class="eyebrow">03 / Personal notes</span>
+                        <h2>About me<span style="color:var(--lime)">.</span></h2>
+                    </div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-copy">
+                        <p>I’m <strong>Sin Lyhov</strong>, a web developer who enjoys turning rough ideas into calm,
+                            capable digital products.</p>
+                        <p>My philosophy is simple: make it useful first, make it memorable second. I care about the
+                            space between design and engineering, where small decisions create a better experience.</p>
+                        <a class="button ghost" href="#" download>Download CV ↓</a>
+                    </div>
+                    <div id="skills" class="skill-grid"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="job">
+            <div class="wrap">
+                <div class="section-heading">
+                    <div><span class="eyebrow">04 / Work history</span>
+                        <h2>Job<span style="color:var(--lime)">.</span></h2>
+                    </div>
+                    <p class="lede">Placeholder roles, ready to be replaced with the real story.</p>
+                </div>
+                <div id="jobs" class="job-grid"></div>
+            </div>
+        </section>
+        <section class="section" id="projects">
+            <div class="wrap">
+                <div class="section-heading">
+                    <div><span class="eyebrow">05 / Selected work</span>
+                        <h2>Projects<span style="color:var(--lime)">.</span></h2>
+                    </div>
+                    <p class="lede">A few imagined directions. The best portfolio is the one that keeps changing.</p>
+                </div>
+                <div class="project-filter"><button class="filter active" data-filter="All">All</button><button
+                        class="filter" data-filter="Web">Web</button><button class="filter"
+                        data-filter="Frontend">Frontend</button><button class="filter" data-filter="Full Stack">Full
+                        Stack</button><button class="filter" data-filter="Other">Other</button></div>
+                <div id="project-list" class="project-grid"></div>
+            </div>
+        </section>
+        <section class="section" id="position">
+            <div class="wrap">
+                <div class="section-heading">
+                    <div><span class="eyebrow">06 / How I contribute</span>
+                        <h2>Position<span style="color:var(--lime)">.</span></h2>
+                    </div>
+                </div>
+                <div id="positions" class="position-grid"></div>
+            </div>
+        </section>
+        <section class="section" id="gallery">
+            <div class="wrap">
+                <div class="section-heading">
+                    <div><span class="eyebrow">07 / Memory archive</span>
+                        <h2>Memory Gallery<span style="color:var(--lime)">.</span></h2>
+                    </div>
+                    <p class="lede">A visual drawer for events, learning moments, and the work behind the work.</p>
+                </div>
+                <div id="gallery-list" class="gallery-grid"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer-row">
+                <div><a class="brand" href="#home"><span class="brand-mark">SL</span> SIN LYHOV</a>
+                    <p>Web Developer · Building with intent.</p>
+                </div>
+                <div class="footer-links"><a href="#home">Home</a><a href="mailto:hello@example.com">Email</a><a
+                        href="#projects">Projects</a><a href="https://github.com" target="_blank"
+                        rel="noreferrer">GitHub ↗</a></div>
+            </div>
+            <div class="copyright">© 2026 SIN LYHOV. All rights reserved.</div>
+        </div>
+    </footer>
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview"><button class="close"
+            aria-label="Close image preview">×</button><img src="" alt=""></div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
