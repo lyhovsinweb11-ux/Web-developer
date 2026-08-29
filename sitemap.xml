@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://web-developer-nine-opal.vercel.app/">
+<urlset xmlns="http://sitemaps.org">
   <url>
-    <loc>http://web-developer-nine-opal.vercel.app/</loc>
+    <loc>https://vercel.app</loc>
   </url>
   <url>
-    <loc>http://web-developer-nine-opal.vercel.app/</loc>
+    <loc>https://vercel.apphistory</loc>
   </url>
-    <url>
-    <loc>http://web-developer-nine-opal.vercel.app/</loc>
+  <url>
+    <loc>https://vercel.appabout</loc>
   </url>
-    <url>
-    <loc>http://web-developer-nine-opal.vercel.app/</loc>
+  <url>
+    <loc>https://vercel.appprojects</loc>
   </url>
-    <url>
-    <loc>http://web-developer-nine-opal.vercel.app/</loc>
+  <url>
+    <loc>https://vercel.appgallery</loc>
   </url>
 </urlset>
+
